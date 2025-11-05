@@ -36,9 +36,9 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 // --- CONFIGURACION DEL SISTEMA ---
-#define PASSWORD "123A" // Contraseña de 4 dígitos
+#define PASSWORD "1102" // Contraseña de 4 dígitos
 #define PASSWORD_LEN 4
-#define DEBOUNCE_TIME_MS 200      // Tiempo de anti-rebote para las teclas 
+#define DEBOUNCE_TIME_MS 200     // Tiempo de anti-rebote para las teclas 
 #define FEEDBACK_LED_TIME_MS 100  // Tiempo que el LED se enciende al oprimir cualquier tecla
 #define SUCCESS_LED_TIME_MS 4000  // Tiempo que el LED se enciende cuando se ingresa la contraseña correcta
 
@@ -133,6 +133,7 @@ void process_key(uint8_t key)
             printf("Contraseña incorrecta. ACCESO DENEGADO.\r\n");
            // Apagar el LED para indicar fallo
             led_off(&led1);
+            
         }
 
         // 4. Reiniciar para el siguiente intento
