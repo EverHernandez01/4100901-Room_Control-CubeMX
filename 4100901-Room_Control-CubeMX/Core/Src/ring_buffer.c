@@ -22,6 +22,7 @@ void ring_buffer_init(ring_buffer_t *rb, uint8_t *buffer, uint16_t capacity)
  * @brief Escribe un dato en el buffer circular.
  * @param rb Puntero a la estructura del buffer circular.
  * @param data Dato a escribir en el buffer.
+ * @param ring_buffer_write Puntero a la función de escritura.
  * @retval true si la escritura fue exitosa, false si el buffer está lleno. 
  */
 bool ring_buffer_write(ring_buffer_t *rb, uint8_t data)

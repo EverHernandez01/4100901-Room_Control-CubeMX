@@ -4,8 +4,8 @@
 #include "main.h"
 #include <stdint.h>
 
-#define KEYPAD_ROWS 4
-#define KEYPAD_COLS 4
+#define KEYPAD_ROWS 4 // Número de filas en el keypad
+#define KEYPAD_COLS 4 // Número de columnas en el keypad
 
 /**
  * @brief Estructura para manejar el teclado matricial

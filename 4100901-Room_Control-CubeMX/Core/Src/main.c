@@ -120,11 +120,11 @@ uint32_t led_on_duration = 0;
 /**
  * @brief Prototipos de funciones privadas
  * @note  Declaraciones de funciones utilizadas en el programa principal
- * @param manage_led_timer: Gestiona el apagado automático del LED sin bloquear el programa
- * @param process_key: Procesa una tecla recibida del buffer del keypad
  * @param SystemClock_Config: Configura el reloj del sistema
  * @param MX_GPIO_Init: Inicializa los pines GPIO
  * @param MX_USART2_UART_Init: Inicializa el periférico USART2 para comunicación UART 
+ * @param manage_led_timer: Gestiona el apagado automático del LED sin bloquear el programa
+ * @param process_key: Procesa una tecla recibida del buffer del keypad
  */
 
 void SystemClock_Config(void); 
