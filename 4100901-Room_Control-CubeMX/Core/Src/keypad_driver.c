@@ -15,6 +15,7 @@ static const char keypad_map[KEYPAD_ROWS][KEYPAD_COLS] = {
 void keypad_init(keypad_handle_t* keypad) {
     // TAREA: Implementar esta función.
     // Todas las filas en estado ALTO (reposo: sin tecla presionada)
+    
     for (int i = 0; i < KEYPAD_ROWS; i++) {
         HAL_GPIO_WritePin(keypad->row_ports[i], keypad->row_pins[i], GPIO_PIN_RESET);
     }
