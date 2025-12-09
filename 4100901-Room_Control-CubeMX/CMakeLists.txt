@@ -51,12 +51,14 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 
     Drivers/ssd1306/ssd1306.c
     Drivers/ssd1306/ssd1306_fonts.c
+    Drivers/DHT11/mk_dht11.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     Drivers/ssd1306
+    Drivers/DHT11
 )
 
 # Add project symbols (macros)

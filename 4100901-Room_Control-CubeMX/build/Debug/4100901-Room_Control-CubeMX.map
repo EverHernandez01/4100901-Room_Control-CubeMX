@@ -2999,6 +2999,110 @@ Discarded input sections
  .debug_macro   0x00000000       0x44 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/ssd1306/ssd1306_fonts.c.obj
  .debug_macro   0x00000000      0x330 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/ssd1306/ssd1306_fonts.c.obj
  .debug_macro   0x00000000       0x4c CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/ssd1306/ssd1306_fonts.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .group         0x00000000        0xc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .text          0x00000000        0x0 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .data          0x00000000        0x0 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .text.init_dht11
+                0x00000000        0x8 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .text.set_dht11_gpio_mode
+                0x00000000       0x44 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .text.readDHT11
+                0x00000000      0x1cc CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_info    0x00000000      0xc17 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_abbrev  0x00000000      0x319 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_loclists
+                0x00000000      0x4af CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_aranges
+                0x00000000       0x30 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_rnglists
+                0x00000000       0x55 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x1eb CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x1a7 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x28 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000    0x1a17a CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000     0x38fb CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000     0x159e CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x5a5 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x1b9 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x18b CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x26b CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x23d CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x241 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x37c CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0xd6 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x22c CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x61 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x122 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x3ef CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x5cf CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x44 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x330 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0xa98 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000      0x1e6 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_line    0x00000000      0xde7 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_str     0x00000000    0xec730 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .debug_frame   0x00000000       0x78 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
  .text          0x00000000        0x0 C:/ST/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
  .data          0x00000000        0x0 C:/ST/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
  .bss           0x00000000        0x0 C:/ST/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
@@ -3382,6 +3486,7 @@ LOAD CMakeFiles/4100901-Room_Control-CubeMX.dir/Core/Src/led_driver.c.obj
 LOAD CMakeFiles/4100901-Room_Control-CubeMX.dir/Core/Src/ring_buffer.c.obj
 LOAD CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/ssd1306/ssd1306.c.obj
 LOAD CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/ssd1306/ssd1306_fonts.c.obj
+LOAD CMakeFiles/4100901-Room_Control-CubeMX.dir/Drivers/DHT11/mk_dht11.c.obj
 LOAD C:/ST/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 START GROUP
 LOAD C:/ST/STM32CubeCLT_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard\libgcc.a
