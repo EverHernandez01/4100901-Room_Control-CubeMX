@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"H:/0_UNIVERSIDAD_NACIONAL/5_Quinto_semestre/Estructuras_Computacionales/4100901-Room_Control-CubeMX/4100901-Room_Control-CubeMX/build/Debug/cmake_install.cmake",
+		"H:/0_UNIVERSIDAD_NACIONAL/5_Quinto_semestre/Estructuras_Computacionales/4100901-Room_Control-CubeMX/4100901-Room_Control-CubeMX/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

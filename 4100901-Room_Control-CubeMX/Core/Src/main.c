@@ -26,6 +26,8 @@
 #include "ring_buffer.h"
 #include <stdio.h>
 #include <string.h>
+#include "ssd1306.h"
+#include "ssd1306_fonts.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,6 +59,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -114,8 +118,10 @@ uint32_t led_on_duration = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-
-
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_USART2_UART_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 /**
  * @brief Prototipos de funciones privadas
@@ -159,10 +165,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) { //espera una interrupción por 
  * @param led_timer_start Iniciar el temporizador para el LED de feedback
  * @param led_on_duration Duración que el LED debe permanecer encendido
  */
-void process_key(uint8_t key)
-{
+void process_key(uint8_t key) 
+{ 
     
-    led_on(&led1);
+    led_on(&led1); 
     led_timer_start = HAL_GetTick(); 
     led_on_duration = FEEDBACK_LED_TIME_MS;
 
@@ -177,17 +183,24 @@ void process_key(uint8_t key)
     // Si ya se ingresaron 4 dígitos, verificar contraseña
 
     if (password_index == PASSWORD_LEN) {
-        if (strncmp(entered_password, PASSWORD, PASSWORD_LEN) == 0) { // Contraseña correcta strncmp compara dos cadenas hasta n caracteres
-            printf("Contraseña correcta. ACCESO AUTORIZADO.\r\n");
-            // Iniciar el temporizador largo para el LED de éxito
-            led_on(&led1);
-            led_timer_start = HAL_GetTick(); // Reiniciar el temporizador
-            led_on_duration = SUCCESS_LED_TIME_MS;
+        if (strncmp(entered_password, PASSWORD, PASSWORD_LEN) == 0) {
+          printf("Contraseña correcta. ACCESO AUTORIZADO.\r\n");
+          ssd1306_Fill(Black); // Limpiar pantalla
+          ssd1306_SetCursor(5, 10);
+          ssd1306_WriteString("AUTORIZADO", Font_11x18, White);
+          ssd1306_UpdateScreen();
+          // Iniciar el temporizador largo para el LED de éxito
+          led_on(&led1);
+          led_timer_start = HAL_GetTick(); // Reiniciar el temporizador
+          led_on_duration = SUCCESS_LED_TIME_MS;
         } else {
-            printf("Contraseña incorrecta. ACCESO DENEGADO.\r\n");
-           // Apagar el LED para indicar fallo
-            led_off(&led1);
-            
+          printf("Contraseña incorrecta. ACCESO DENEGADO.\r\n");
+          ssd1306_Fill(Black); // Limpiar pantalla
+          ssd1306_SetCursor(5, 10);
+          ssd1306_WriteString("DENEGADO", Font_11x18, White);
+          ssd1306_UpdateScreen();
+          // Apagar el LED para indicar fallo
+          led_off(&led1);
         }
 
         // 4. Reiniciar para el siguiente intento
@@ -232,6 +245,10 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
+  ssd1306_Init();
+  ssd1306_Fill(Black);
+  ssd1306_UpdateScreen();
+
 
   /* USER CODE BEGIN Init */
 
@@ -247,6 +264,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
   /**
@@ -261,6 +279,12 @@ int main(void)
   keypad_init(&keypad);
   printf("Sistema listo. Esperando pulsaciones del teclado...\r\n");
   printf("Ingrese la contraseña de 4 digitos...\r\n");
+
+  ssd1306_Init();
+  ssd1306_Fill(Black);
+  ssd1306_SetCursor(10, 0);
+  ssd1306_WriteString("Hello Sam!", Font_11x18, White);
+  ssd1306_UpdateScreen();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -297,8 +321,6 @@ int main(void)
 /**
   * @brief System Clock Configuration
   * @retval None
-  * @param RCC_OscInitTypeDef Estructura para configurar los osciladores
-  * @param RCC_ClkInitTypeDef Estructura para configurar los relojes del sistema
   */
 void SystemClock_Config(void)
 {
@@ -343,6 +365,54 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x10D19CE4;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
@@ -401,19 +471,19 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LD2_Pin|KEYPAD_R1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LD2_Pin|LED_EXT_Pin|KEYPAD_R1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, KEYPAD_R2_Pin|KEYPAD_R4_Pin|KEYPAD_R3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : B1_Pin KEYPAD_C4_Pin */
-  GPIO_InitStruct.Pin = B1_Pin;
+  GPIO_InitStruct.Pin = B1_Pin|KEYPAD_C4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LD2_Pin KEYPAD_R1_Pin */
-  GPIO_InitStruct.Pin = LD2_Pin|KEYPAD_R1_Pin;
+  /*Configure GPIO pins : LD2_Pin LED_EXT_Pin KEYPAD_R1_Pin */
+  GPIO_InitStruct.Pin = LD2_Pin|LED_EXT_Pin|KEYPAD_R1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -424,12 +494,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(KEYPAD_C1_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : KEYPAD_C4_Pin */
-  GPIO_InitStruct.Pin = KEYPAD_C4_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(KEYPAD_C4_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : KEYPAD_C2_Pin KEYPAD_C3_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C2_Pin|KEYPAD_C3_Pin;
@@ -445,10 +509,10 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 5, 0);
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 4, 0);
   HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 5, 0);
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 4, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */

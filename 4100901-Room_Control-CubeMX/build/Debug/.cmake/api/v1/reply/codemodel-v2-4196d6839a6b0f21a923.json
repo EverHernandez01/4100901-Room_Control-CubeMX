@@ -60,14 +60,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "4100901-Room_Control-CubeMX::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-4100901-Room_Control-CubeMX-Debug-6fc4940c642d725736ef.json",
+					"jsonFile" : "target-4100901-Room_Control-CubeMX-Debug-7a526415f70cf8ce58cc.json",
 					"name" : "4100901-Room_Control-CubeMX",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-Debug-375e2ea44a7fcc5a222c.json",
+					"jsonFile" : "target-STM32_Drivers-Debug-e7aa70055d71a9dc05c7.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				}
@@ -83,6 +83,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 8
 	}
 }

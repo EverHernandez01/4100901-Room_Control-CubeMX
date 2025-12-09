@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"target_link_libraries",
+			"target_include_directories",
 			"target_sources"
 		],
 		"files" : 
@@ -41,12 +42,18 @@
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 1,
 				"line" : 78,
 				"parent" : 2
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 46,
 				"parent" : 0
@@ -59,7 +66,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11"
+					"fragment" : " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O3 -g3 -std=gnu11"
 				}
 			],
 			"defines" : 
@@ -79,6 +86,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 4,
+					"path" : "H:/0_UNIVERSIDAD_NACIONAL/5_Quinto_semestre/Estructuras_Computacionales/4100901-Room_Control-CubeMX/4100901-Room_Control-CubeMX/Drivers/ssd1306"
+				},
 				{
 					"backtrace" : 3,
 					"path" : "H:/0_UNIVERSIDAD_NACIONAL/5_Quinto_semestre/Estructuras_Computacionales/4100901-Room_Control-CubeMX/4100901-Room_Control-CubeMX/cmake/stm32cubemx/../../Core/Inc"
@@ -118,7 +129,9 @@
 				4,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		},
 		{
@@ -145,6 +158,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 4,
+					"path" : "H:/0_UNIVERSIDAD_NACIONAL/5_Quinto_semestre/Estructuras_Computacionales/4100901-Room_Control-CubeMX/4100901-Room_Control-CubeMX/Drivers/ssd1306"
+				},
 				{
 					"backtrace" : 3,
 					"path" : "H:/0_UNIVERSIDAD_NACIONAL/5_Quinto_semestre/Estructuras_Computacionales/4100901-Room_Control-CubeMX/4100901-Room_Control-CubeMX/cmake/stm32cubemx/../../Core/Inc"
@@ -186,7 +203,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O0 -g3",
+				"fragment" : "-mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -O3 -g3",
 				"role" : "flags"
 			},
 			{
@@ -221,7 +238,9 @@
 				4,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		},
 		{
@@ -235,8 +254,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				9,
-				10,
 				11,
 				12,
 				13,
@@ -252,64 +269,78 @@
 				23,
 				24,
 				25,
-				26
+				26,
+				27,
+				28
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/main.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stm32l4xx_it.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stm32l4xx_hal_msp.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/sysmem.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/syscalls.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"compileGroupIndex" : 1,
 			"path" : "startup_stm32l476xx.s",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/keypad_driver.c",
+			"path" : "core/Src/keypad_driver.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/led_driver.c",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/ring_buffer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/ssd1306/ssd1306.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/ssd1306/ssd1306_fonts.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -321,13 +352,13 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/7cc2bf78d381c51da830a55a79b40627/Src/stm32l4xx_hal_uart.c.obj",
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/7cc2bf78d381c51da830a55a79b40627/Src/stm32l4xx_hal_i2c.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/34ffa62f3cf58c1e1b0485243292b06d/stm32l4xx_hal_uart_ex.c.obj",
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/34ffa62f3cf58c1e1b0485243292b06d/stm32l4xx_hal_i2c_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -375,18 +406,6 @@
 		{
 			"backtrace" : 3,
 			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/7cc2bf78d381c51da830a55a79b40627/Src/stm32l4xx_hal_i2c.c.obj",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 3,
-			"isGenerated" : true,
-			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/34ffa62f3cf58c1e1b0485243292b06d/stm32l4xx_hal_i2c_ex.c.obj",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 3,
-			"isGenerated" : true,
 			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/7cc2bf78d381c51da830a55a79b40627/Src/stm32l4xx_hal_dma.c.obj",
 			"sourceGroupIndex" : 2
 		},
@@ -418,6 +437,18 @@
 			"backtrace" : 3,
 			"isGenerated" : true,
 			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/7cc2bf78d381c51da830a55a79b40627/Src/stm32l4xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/7cc2bf78d381c51da830a55a79b40627/Src/stm32l4xx_hal_uart.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/34ffa62f3cf58c1e1b0485243292b06d/stm32l4xx_hal_uart_ex.c.obj",
 			"sourceGroupIndex" : 2
 		}
 	],
